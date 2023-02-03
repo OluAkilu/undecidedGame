@@ -7,11 +7,11 @@ The game will simulate itself in entirety by using the “turn” method–expla
 Possible Values:
 Health/HP Values (when this number reaches 0 or anything less than it, the game ends and the “player” with 0 HP loses–in the scenario that both “players” are left with 0 HP at the end of the turn, the game results in a tie.)
 
-Possible Actions: each player has a 50% chance of doing either of these
+Possible Actions: each player has a 50% chance of doing either of these:
 Attack (reduces HP of opposing “player” by a random integer value from 1-10, has a 30% chance to crit which doubles dmg dealt)
 Defend (reduces dmg received by 50% always, but has 50% chance of failing)
 
-Ending Scenarios: this scenarios are only checked for at the end of each turn
+Ending Scenarios: these scenarios are only checked for at the end of each turn
 HP of CPUs reaches 0 or below - this is counted as a win or a knockout for the other player
 HP of both CPUs reaches 0 or below - this is counted as a double knockout
 Number of turns reaches 10 - this is counted as a stalemate
@@ -28,3 +28,10 @@ Defense function (have not implemented a chance of failure)
 Attack function (seems to be working properly, still deciding default values for each attribute)
 Basic Dialogue (x is attacking, y is defending…)
 Endcase Scenarios (x/y wins, game is a draw)
+
+Still to be Implemented:
+Luck feature
+Preferred Actions (if an opponent has close to no HP, chance of attacking is higher; if cpu has little HP, chance of defending is higher)
+Chance of Defense failure
+Various Input functions
+CPU "archetypes" (one might have more default HP, or Attack, or a higher Luck stat)
