@@ -137,8 +137,8 @@ public class undecidedgame {
 	public static void main (String args[]) {
 		//System.out.println("Hi hi, I made a game");
 		
-		player cpu1 = new player("Jack");
-		player cpu2 = new player("Jak");
+		player cpu1 = new player("Jack"); // will implement input methods so players can choose names and cpu archetypes
+		player cpu2 = new player("Jak"); // ^
 		
 		//System.out.println(cpu1.getName());
 		//System.out.println(cpu2.getName());
@@ -169,14 +169,14 @@ class player {
 	
 	private String name;
 	public int health;
-	public int luck; // probably will not be used in this iteration of uG
+	public int luck; // probably will not be used in this iteration of uG (undecidedGame)
 	private int attack;
 	private boolean actions; // true = attack, false = defend
 	
 	public player () {}
 	
 	public player (String n) {
-		
+	
 		name = n;
 		health = 25;
 		luck = 0;
